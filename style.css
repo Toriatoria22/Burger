@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #ff9c2d;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+}
+
+header .logo a img {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li a {
+   color: white;
+   font-size: 20px;
+   padding: 5px 25px;
+   font-style: solid;
+   font-family: Arial;
+}
+
+.active {
+    background-color: #3e1407;
+    color: white;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+header nav ul li a button {
+    background-color: #3e1407;
+    color: white;
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+    border: none;
+    font-style: solid;
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+.btn {
+    display: flex;
+}
+
+.login {
+    background-color: #3e1407;
+    color: white;
+    height: 32px;
+    width: 100px;
+    border-radius: 20px;
+    border: none;
+    font-style: solid;
+    font-size: 20px;
+    font-family: Arial;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.sign-up {
+    background-color: #ff9c2d;
+    color: #3e1407;
+    border-style: solid;
+    border-color: #ff9c2d;
+    border-radius: 20px;
+    height: 30px;
+    width: 80px;
+    font-style: solid;
+    font-family: Arial;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* content */
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.content h2{
+    font-size: 40px;
+    width: 500px;
+    padding-bottom: 20px;
+    color: #3e1407;
+    font-family: Arial;
+    font-weight: bold;
+    font-style: solid;
+}
+
+.content p{
+    font-size: 20px;
+    color: #3e1407;
+    width: 600px;
+    padding-bottom: 15px;
+    font-family: Arial;
+}
+
+.get-started {
+    background-color:#3e1407;
+    color: white;
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+    border: none;
+    font-style: solid;
+    font-size: 15px;
+    font-family: Arial;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.watch-demo {
+    background-color: #ff9c2d;
+    color: #3e1407;
+    border-style: solid;
+    border-color: #3e1407;
+    border-radius: 20px;
+    height: 40px;
+    width: 130px;
+    font-style: solid;
+    font-size: 15px;
+    font-family: Arial;
+    cursor: pointer;
+}
+
+/* responsive */
+
+@media(max-width:950px) {
+    header {
+        flex-direction: column;
+    }
+
+    header nav ul li a {
+        font-size: 18px;
+        flex-direction: column;
+        display: inline-block;
+    }
+
+    header nav  {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .login {
+        font-size: 18px;
+    }
+
+    .sign-up {
+        font-size: 18px;
+    }
+}
+
+@media(max-width:700px) {
+    header {
+        flex-direction: column;
+    }
+
+    header nav ul li a {
+        font-size: 18px;
+        flex-direction: column;
+        display: inline-block;
+    }
+
+    header nav  {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .login {
+        font-size: 18px;
+    }
+
+    .sign-up {
+        font-size: 18px;
+    }
+
+    .content {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+}
+
+@media(max-width:500px) {
+    header {
+        flex-direction: column;
+    }
+
+    header nav ul li a {
+        font-size: 13px;
+        flex-direction: column;
+        display: inline-block;
+    }
+
+    header nav  {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .login {
+        font-size: 13px;
+    }
+
+    .sign-up {
+        font-size: 13px;
+    }
+
+    .content {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .content h2 {
+        font-size: 23px;
+    }
+
+    .content p {
+        font-size: 13px;
+    }
+}
+
+@media(max-width:410px) {
+    header {
+        flex-direction: column;
+    }
+
+    header nav ul li a {
+        font-size: 10px;
+        flex-direction: column;
+        display: inline-block;
+        padding: 5px 5px;
+    }
+
+    header nav  {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .login {
+        font-size: 13px;
+    }
+
+    .sign-up {
+        font-size: 13px;
+    }
+   
+}
